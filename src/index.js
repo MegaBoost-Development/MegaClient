@@ -1,19 +1,18 @@
-import React, { PureComponent } from 'react';
-import ReactDom from 'react-dom';
-import { Router, hashHistory as history } from 'react-router';
-import routes from './../routes';
-import './styles/global.scss';
-import Home from './components/Home/Home.js';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
 
-class App extends PureComponent {
-	render() {
-		return (
-            <Home />
-        );
-	}
-};
-
-ReactDom.render(
-	<Router routes={routes} history={history} />,
-	document.getElementById('react-root')
+ReactDOM.render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
+  document.getElementById('root')
 );
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
