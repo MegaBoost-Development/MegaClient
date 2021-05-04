@@ -11,11 +11,6 @@ class Home extends Component {
 
     render() {
         return (
-
-          <main>
-            {this.props.children}
-          </main>
-
             <div className='homeWrapper'>
                 <h2>MegaClient</h2>
             </div>
