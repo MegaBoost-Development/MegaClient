@@ -20,6 +20,11 @@ class Header extends React.Component {
           </ul>
         </div>
       </nav>
+
+      <ul className="nav flex-column sidebar">
+        <li className="nav-item"><Link to='/store' className="nav-link">Store</Link></li>
+        <li className="nav-item"><Link to='/games' className="nav-link">Games</Link></li>
+      </ul>
       </header>
     );
   }
