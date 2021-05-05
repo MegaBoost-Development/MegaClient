@@ -1,18 +1,18 @@
 import React from 'react'
 
-class Games extends React.Component {
+class Store extends React.Component {
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          Welcome to the games page
+          Welcome to the stores page
         </header>
         <div className="border mt-4 rounded shadow">
-          Games
+          Store
         </div>
       </div>
     );
   }
 }
 
-export default Games
+export default Store
