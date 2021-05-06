@@ -1,4 +1,4 @@
-$primary-nav-color: #3f9ae4;
+$primary-nav-color: #474545;
 $primary-text-color: white;
 
 .navbar-dark, .sidebar {
@@ -8,13 +8,15 @@ $primary-text-color: white;
 
 .sidebar {
   width: 100px!important;
+  height: 100%!important;
 }
 
-a.nav-item {
-  color: $primary-text-color!important;
+.sidebar-brand {
+  width: 100%!important;
 }
 
-.wrapper {
-  display: flex;
-  align-items: stretch;
+.side-item {
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }

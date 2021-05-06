@@ -1,31 +1,16 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { FilePerson, ArchiveFill, BagFill } from 'react-bootstrap-icons'
 
 class Header extends React.Component {
+
   render() {
     return(
-      <header>
-
-      <nav className="navbar navbar-expand-lg bg-dark navbar-dark">
-        <Link to='/' className="navbar-brand">Home</Link>
-
-        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon navbar-dark"></span>
-        </button>
-
-        <div className="collapse navbar-collapse justify-content-left" id="collapsibleNavbar">
-          <ul className="navbar-nav">
-            <li className="nav-item"><Link to='/store' className="nav-link">Store</Link></li>
-            <li className="nav-item"><Link to='/games' className="nav-link">Games</Link></li>
-          </ul>
-        </div>
-      </nav>
-
       <ul className="nav flex-column sidebar">
-        <li className="nav-item"><Link to='/store' className="nav-link">Store</Link></li>
-        <li className="nav-item"><Link to='/games' className="nav-link">Games</Link></li>
+        <Link to='/'><img src={process.env.PUBLIC_URL + '/logo.png'} className="sidebar-brand" /></Link>
+        <li className="nav-item side-item"><Link to='/store' className="nav-link"><ArchiveFill color="white" size={25}/></Link></li>
+        <li className="nav-item side-item"><Link to='/games' className="nav-link"><FilePerson color="white" size={25}/></Link></li>
       </ul>
-      </header>
     );
   }
 }

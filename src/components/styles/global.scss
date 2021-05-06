@@ -1,0 +1,11 @@
+$body-bg: #707070;
+
+body {
+  height: 100%!important;
+  overflow-x: hidden;
+  background-color: $body-bg;
+}
+
+#root, .content {
+  height: 100%!important;
+}
